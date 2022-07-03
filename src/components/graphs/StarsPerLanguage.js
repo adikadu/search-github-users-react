@@ -17,6 +17,5 @@ export default function StarsPerLanguage() {
     label: language,
     value: graphData[language],
   }));
-  console.log("graphData", graphData);
   return <Doughnut3d graphData={graphData} />;
 }

@@ -120,7 +120,6 @@ export default function ContextProvider(props) {
         );
         setIsloading(false);
 
-        // console.log("fetchedUserData", fetchedUserData);
         dispatch({ type: "INITIALISE_USER_DATA", fetchedUserData });
         setError(null);
       } catch (error) {
