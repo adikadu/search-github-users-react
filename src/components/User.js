@@ -36,7 +36,14 @@ export default function User() {
         )}
         {ctx.userData.blog && ctx.userData.blog.length > 0 && (
           <li>
-            <FiLink2 /> <a href={ctx.userData.blog}>{ctx.userData.blog}</a>
+            <FiLink2 />{" "}
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href={`https://${ctx.userData.blog}`}
+            >
+              {ctx.userData.blog}
+            </a>
           </li>
         )}
       </ul>
