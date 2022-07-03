@@ -1,0 +1,26 @@
+.graphs {
+  display: block;
+  width: 90vw;
+  margin: 2rem auto;
+  display: grid;
+  grid-template-columns: 1fr 1.6fr;
+  column-gap: 2rem;
+  row-gap: 2rem;
+}
+
+.graphs div {
+  width: 100% !important;
+}
+.graphs .fusioncharts-container {
+  width: 100% !important;
+}
+.graphs svg {
+  width: 100% !important;
+  border-radius: var(--radius) !important;
+}
+
+@media screen and (max-width: 860px) {
+  .graphs {
+    grid-template-columns: 1fr;
+  }
+}

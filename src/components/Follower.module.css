@@ -1,0 +1,40 @@
+.folower {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+.folower img {
+  width: 4rem;
+  height: 4rem;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.name-and-link h3 {
+  color: rgb(29, 29, 29);
+  margin-bottom: 0.2rem;
+}
+
+.name-and-link a {
+  text-decoration: none;
+  color: inherit;
+}
+
+@media screen and (max-width: 425px) {
+  .folower {
+    gap: 0.2rem;
+    padding: 0.2rem 0;
+    border-bottom: 1px solid #84a7c9;
+  }
+
+  .name-and-link h3 {
+    font-size: 1rem;
+  }
+
+  .name-and-link a {
+    font-size: 0.8rem;
+  }
+}

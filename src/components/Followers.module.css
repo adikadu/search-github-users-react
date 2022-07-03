@@ -1,0 +1,49 @@
+.container-followers {
+  width: 48%;
+  height: 17rem;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 11px;
+  border-top-left-radius: 0;
+  color: #04454b;
+  position: relative;
+}
+
+.followers {
+  height: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 0.6rem;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.container-followers::before {
+  content: "Followers";
+  position: absolute;
+  top: -1.78rem;
+  left: 0;
+  background-color: #fff;
+  padding: 0.2rem;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  clip-path: inset(-5px -5px 0 -5px);
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+}
+
+@media screen and (max-width: 860px) {
+  .container-followers {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .container-followers {
+    height: 20rem;
+  }
+}

@@ -1,0 +1,116 @@
+.user {
+  width: 48%;
+  min-height: 17rem;
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 11px;
+  border-top-left-radius: 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  color: #617d98;
+  position: relative;
+}
+
+.user-info-btn-follow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.name-username {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.name-username h3 {
+  color: #044c53;
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+}
+
+.user-info img {
+  width: 6rem;
+  height: 6rem;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.btn-follow {
+  text-decoration: none;
+  background-color: transparent;
+  border: 1px solid #2caeba;
+  color: #2caeba;
+  border-radius: 1rem;
+  padding: 0.4rem 0.8rem;
+  letter-spacing: 1px;
+  transition: background-color 0.8s ease, color 0.8s ease;
+}
+
+.btn-follow:hover {
+  background-color: #2caeba;
+  color: #fff;
+}
+
+.user-desc {
+  margin-bottom: 1.4rem;
+  color: #044c53;
+}
+
+.user ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.4rem;
+}
+
+.user ul li a {
+  text-decoration: none;
+  color: #2caeba;
+}
+
+.user::before {
+  content: "User";
+  position: absolute;
+  top: -1.78rem;
+  left: 0;
+  background-color: #fff;
+  padding: 0.2rem;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  clip-path: inset(-5px -5px 0 -5px);
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+}
+
+@media screen and (max-width: 860px) {
+  .user {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .user {
+    min-height: 20rem;
+  }
+
+  .user-info-btn-follow {
+    flex-direction: column;
+  }
+  .btn-follow {
+    align-self: flex-end;
+  }
+}

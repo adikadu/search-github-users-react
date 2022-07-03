@@ -1,0 +1,141 @@
+.container {
+  width: 90vw;
+  margin: 2rem auto;
+}
+
+.home-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.4rem;
+}
+
+.home-top form {
+  flex: 1;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 5px;
+  color: #aaa;
+  padding: 0.4rem;
+}
+
+.home-top form:focus {
+  outline: 2px solid rgb(48, 47, 47);
+}
+
+.home-top form svg {
+  font-size: 1.4rem;
+}
+
+.home-top form input {
+  width: 85%;
+  font-size: 1.4rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+}
+
+.home-top form input::placeholder {
+  text-transform: capitalize;
+  color: #617d98;
+}
+
+.home-top form input:focus {
+  outline: none;
+}
+
+.home-top form button {
+  border: none;
+  padding: 0.3rem 0.6rem;
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  background-color: #2caeba;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 1s ease, color 1s ease;
+}
+
+.home-top form button:hover {
+  background-color: #88ebf2;
+  color: #102a42;
+}
+
+.requests {
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+  color: #617d98;
+}
+
+.data-cards {
+  width: 100%;
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.user-followers {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 4rem;
+}
+
+.error {
+  margin-top: 4.4rem;
+  text-align: center;
+  color: #102a42;
+  font-size: 2.8rem;
+}
+
+@media screen and (max-width: 860px) {
+  .user-followers {
+    flex-direction: column;
+    gap: 3rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .home-top form input {
+    padding: 0 1rem;
+    font-size: 1rem;
+  }
+
+  .home-top form button {
+    padding: 0.2rem 0.4rem;
+    font-size: 1rem;
+  }
+  .requests {
+    font-size: 1.4rem;
+  }
+  .error {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .home-top form {
+    width: 100%;
+  }
+  .home-top {
+    flex-direction: column;
+  }
+  .error {
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .requests {
+    font-size: 1.2rem;
+  }
+  .error {
+    font-size: 1.2rem;
+  }
+}

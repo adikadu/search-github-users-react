@@ -1,0 +1,90 @@
+.data-card {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1.6rem;
+  flex-wrap: wrap;
+  padding: 0.6rem 0.8rem;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+.icon {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon svg {
+  font-size: 2rem;
+}
+
+.metric {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.metric-val {
+  font-size: 2.2rem;
+  text-transform: capitalize;
+  font-weight: bold;
+  color: #044c53;
+}
+
+.metric-type {
+  color: #617d98;
+}
+
+@media screen and (max-width: 1024px) {
+  .data-card {
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .metric-val {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .metric-val {
+    font-size: 1.4rem;
+  }
+  .metric-type {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .icon {
+    width: 2rem;
+    height: 2rem;
+  }
+  .icon svg {
+    font-size: 1.6rem;
+  }
+  .metric-val {
+    font-size: 1rem;
+  }
+  .metric-type {
+    font-size: 0.6rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .metric-val {
+    font-size: 0.8rem;
+  }
+  .metric-type {
+    font-size: 0.4rem;
+  }
+}
